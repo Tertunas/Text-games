@@ -15,5 +15,11 @@ def forest():
 
 def die():
 	print "You died"
+	print "Do you want to play again?"
+	answer = raw_input()
+	if answer.upper() == "YES":
+		forest()
+	else:
+		quit()
 
 forest()
